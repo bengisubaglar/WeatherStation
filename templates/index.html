@@ -1,0 +1,27 @@
+<!doctype html>
+	<head>
+			<link rel="stylesheet" href='/static/main15.css' />			
+			<title>Weather Station</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="column">				
+					<h1>{{title}}</h1>
+					<p>The date and time on the server is: {{ time }}</p>
+					<p>Temperature is: {{temp}}C and Humidity is: {{hum}}%</p>
+					<p>Pressure is: {{pressure}}</p>
+
+					<p>Sealevel Pressure is: {{sealevel_pressure}}</p>	
+					<p>Weather Forecast : {{state}}</p>	
+			
+					<img src="{{url_for('static',filename='temp15.jpeg')}}" /> 
+				
+					<img src="{{url_for('static',filename='hum15.jpeg')}}" />
+				</div>
+			</div>
+		</div>
+	</body>
